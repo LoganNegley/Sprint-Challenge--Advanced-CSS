@@ -4,6 +4,10 @@
   background-color: @wild-sand;
   .dis-flex;
   flex-flow: column nowrap;
+  /////////////media at 500////////////
+  @media @phone {
+    width: 100%;
+  }
   nav {
     .mixin-center;
     font-family: @river-bend;
@@ -15,6 +19,10 @@
       font-size: 2rem;
       padding: 1rem;
       margin: 4rem 1rem;
+      ////////////////media at 500/////////
+      @media @phone {
+        margin: 0;
+      }
     }
   }
 
