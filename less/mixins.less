@@ -1,1 +1,15 @@
 // Mixins Here
+.mixin-center {
+  text-align: center;
+}
+
+.make-btn(@size,@text-sz, @text-col,@bg-color, @radius,@pad) {
+  width: @size;
+  height: @text-sz * 1.5;
+  font-size: @text-sz;
+  padding: @pad;
+  color: @text-col;
+  background-color: @bg-color;
+  border-radius: @radius;
+  .mixin-center;
+}

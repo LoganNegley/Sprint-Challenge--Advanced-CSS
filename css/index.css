@@ -1,3 +1,6 @@
+.mixin-center {
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -237,6 +240,16 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 30%;
+  height: 3rem;
+  font-size: 2rem;
+  padding: 3px;
+  color: white;
+  background-color: #22283A;
+  border-radius: 7px;
+  text-align: center;
 }
 .home .walk .walk-img {
   width: 46%;
