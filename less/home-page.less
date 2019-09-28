@@ -3,6 +3,7 @@
 .home {
   .intro {
     img {
+      width: 100%;
       border-radius: 7px;
     }
     h2 {
@@ -13,17 +14,39 @@
       padding: 0 15px;
     }
   }
+  /////////////Media at 500//////////
+  @media @phone {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    /////////////medica at 500/////////
+    @media @phone {
+      flex-flow: column nowrap;
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      ///////////////////Media at 500/////////
+      @media @phone {
+        width: 100%;
+        margin: 20px 0;
+      }
+    }
+
+    /////////////////Media at 500////////
+    .sky,
+    .launch {
+      @media @phone {
+        display: none;
+      }
     }
   }
 
@@ -45,6 +68,10 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+
+    @media @phone {
+      flex-flow: column nowrap;
+    }
 
     .walk-text {
       width: 50%;
@@ -71,10 +98,23 @@
       width: 46%;
       margin-left: 4%;
 
+      @media @phone {
+        order: -1;
+        width: 100%;
+        margin: 0;
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+
+      .walk {
+        @media @phone {
+          flex-flow: row nowrap;
+          width: 100%;
+        }
       }
     }
   }
