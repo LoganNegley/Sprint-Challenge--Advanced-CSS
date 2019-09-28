@@ -162,6 +162,7 @@ p {
 }
 .nav-header {
   width: 98%;
+  height: 100px;
   background-color: #F6F6F6;
   margin-left: 3rem;
 }
@@ -169,12 +170,13 @@ p {
   text-align: center;
   font-family: #454A59;
   border: #F1F1F1;
+  margin-top: 1rem;
 }
 .nav-header nav a {
   text-decoration: none;
   font-size: 2rem;
   padding: 1rem;
-  margin: 1rem;
+  margin: 4rem 1rem;
 }
 .nav-header h1 {
   text-align: center;
@@ -190,6 +192,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 7px;
 }
 .home .intro h2 {
   padding: 15px;
