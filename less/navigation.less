@@ -1,1 +1,37 @@
 // Navigation code here
+.nav-header {
+  width: 98%;
+  background-color: @wild-sand;
+  .dis-flex;
+  flex-flow: column nowrap;
+  /////////////media at 500////////////
+  @media @phone {
+    width: 100%;
+    margin: 0;
+  }
+  nav {
+    .mixin-center;
+    font-family: @river-bend;
+    border: @sea-shell;
+    margin-top: 1rem;
+
+    a {
+      text-decoration: none;
+      font-size: 2rem;
+      padding: 1rem;
+      margin: 4rem 1rem;
+      ////////////////media at 500/////////
+      @media @phone {
+        margin: 0;
+      }
+    }
+  }
+
+  h1 {
+    .mixin-center;
+    font-size: 3rem;
+    padding: 1.5rem 0;
+    color: black;
+    animation: color-change 5s infinite;
+  }
+}

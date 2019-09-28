@@ -1,1 +1,31 @@
 // Mixins Here
+.mixin-center {
+  text-align: center;
+}
+/////used on footer and header
+.dis-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.make-btn(@size,@text-sz, @text-col,@bg-color, @radius,@pad) {
+  width: @size;
+  height: @text-sz * 1.5;
+  font-size: @text-sz;
+  padding: @pad;
+  color: @text-col;
+  background-color: @bg-color;
+  border-radius: @radius;
+  .mixin-center;
+}
+
+///////////Animation Mixin///////
+.color-changer(@color1,@color2,@color3) {
+  from {
+    color: @color1;
+  }
+  to {
+    color: @color3;
+  }
+}
