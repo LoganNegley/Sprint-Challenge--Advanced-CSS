@@ -1,6 +1,11 @@
 .mixin-center {
   text-align: center;
 }
+.dis-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -165,9 +170,11 @@ p {
 }
 .nav-header {
   width: 98%;
-  height: 100px;
   background-color: #F6F6F6;
-  margin-left: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 .nav-header nav {
   text-align: center;
@@ -187,7 +194,7 @@ p {
   padding: 1.5rem 0;
 }
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -246,7 +253,7 @@ footer {
   height: 3rem;
   font-size: 2rem;
   padding: 3px;
-  color: white;
+  color: #F1F1F1;
   background-color: #22283A;
   border-radius: 7px;
   text-align: center;
